@@ -40,16 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\iComponent.cs" />
-    <Compile Include="Abstract\iFixedComponent.cs" />
-    <Compile Include="Abstract\iOptionalComponent.cs" />
-    <Compile Include="FixedComponents\FrameShiftDrive.cs" />
-    <Compile Include="FixedComponents\LifeSupport.cs" />
-    <Compile Include="FixedComponents\PowerPlants.cs" />
-    <Compile Include="FixedComponents\Thrusters.cs" />
+    <Compile Include="Components\Abstract\iComponent.cs" />
+    <Compile Include="Components\Abstract\iFixedComponent.cs" />
+    <Compile Include="Components\Abstract\iOptionalComponent.cs" />
+    <Compile Include="Components\FixedComponents\CargoHatch.cs" />
+    <Compile Include="Components\FixedComponents\FrameShiftDrive.cs" />
+    <Compile Include="Components\FixedComponents\FuelTank.cs" />
+    <Compile Include="Components\FixedComponents\LifeSupport.cs" />
+    <Compile Include="Components\FixedComponents\PowerDistributor.cs" />
+    <Compile Include="Components\FixedComponents\PowerPlants.cs" />
+    <Compile Include="Components\FixedComponents\Sensors.cs" />
+    <Compile Include="Components\FixedComponents\Thrusters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Components\OptionalComponents\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

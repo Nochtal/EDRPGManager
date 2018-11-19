@@ -4,8 +4,14 @@ namespace EdrpgDLL.Concret
 {
     public class LifeSupport : iFixedComponent
     {
-        public LifeSupport()
+        public LifeSupport(double time, double powerCost, char _class, int cost, int size, int strength)
         {
+            Time = time;
+            PowerCost = powerCost;
+            Class = _class;
+            Cost = cost;
+            Size = size;
+            Strength = strength;
             Name = "Life Support";
         }
 

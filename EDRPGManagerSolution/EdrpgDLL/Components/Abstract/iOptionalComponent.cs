@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EdrpgDLL.Abstract
+﻿namespace EdrpgDLL.Abstract
 {
     interface iOptionalComponent : iComponent
     {
@@ -16,7 +10,7 @@ namespace EdrpgDLL.Abstract
         /// restricted to Military Components
         /// </summary>
         
-        int PowerCost { get; set; }
+        double PowerCost { get; set; }
         
         bool Military { get; set; }
     }
