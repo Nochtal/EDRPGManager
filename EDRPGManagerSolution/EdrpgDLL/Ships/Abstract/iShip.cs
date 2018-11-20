@@ -63,5 +63,11 @@
         int Shields { get; set; }
 
         int ShipCost();
+
+        void SwitchBulkheads();
+
+        void ApplyHullModifiers();
+
+        void ApplyShieldModifiers();
     }
 }
