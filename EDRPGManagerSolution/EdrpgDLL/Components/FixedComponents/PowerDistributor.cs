@@ -4,7 +4,7 @@ namespace EdrpgDLL.FixedComponents
 {
     public class PowerDistributor : iFixedComponent
     {
-        public PowerDistributor(char _class, double powerCost, int cost, int size, int strength, int[] bonuses)
+        public PowerDistributor(char _class, double powerCost, int cost, int size, int strength, int floatingBonus, int agilityBonus, int hitBonus, int shieldBonus)
         {
             Class = _class;
             PowerCost = powerCost;
@@ -12,7 +12,8 @@ namespace EdrpgDLL.FixedComponents
             Size = size;
             Strength = strength;
             Name = "Power Distributor";
-            Effects = bonuses;
+            Effects = new int[] { floatingBonus, agilityBonus, hitBonus, shieldBonus };
+            Military = false;
         }
 
         public char Class { get { return Class; } set { Class = value; } }
@@ -26,6 +27,8 @@ namespace EdrpgDLL.FixedComponents
         public int Size { get { return Size; } set { Size = value; } }
 
         public int Strength { get { return Strength; } set { Strength = value; } }
+
+        public bool Military { get { return Military; } set { Military = value; } }
 
         /// <summary>
         /// List of bonuses based on Class and Size of Power Distributor

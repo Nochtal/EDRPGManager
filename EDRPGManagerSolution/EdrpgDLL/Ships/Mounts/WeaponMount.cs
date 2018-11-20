@@ -33,6 +33,11 @@ namespace EdrpgDLL.Ships.Mounts
             }
         }
 
+        public void RemoveComponent()
+        {
+            Weapon = null;
+        }
+
         public bool VerifyComponent(iComponent pw)
         {
             if (pw is iWeaponComponent && pw.Size <= Size) return true;

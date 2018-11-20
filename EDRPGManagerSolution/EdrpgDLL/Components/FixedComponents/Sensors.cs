@@ -13,6 +13,7 @@ namespace EdrpgDLL.Components.FixedComponents
             Cost = cost;
             Strength = strength;
             Effects = effects;
+            Military = false;
         }
 
         public string Name { get { return Name; } set { Name = value; } }
@@ -26,6 +27,8 @@ namespace EdrpgDLL.Components.FixedComponents
         public int Cost { get { return Cost; } set { Cost = value; } }
 
         public int Strength { get { return Strength; } set { Strength = value; } }
+
+        public bool Military { get { return Military; } set { Military = value; } }
 
         /// <summary>
         /// i: Bonus Type, range

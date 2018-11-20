@@ -11,6 +11,7 @@ namespace EdrpgDLL.Components.FixedComponents
             PowerCost = 0;
             Name = "Fuel Tank";
             FuelTonnage = fuelTonnage;
+            Military = false;
         }
 
         public char Class { get { return Class; } set { Class = value; } }
@@ -26,5 +27,7 @@ namespace EdrpgDLL.Components.FixedComponents
         public int Strength { get { return Strength; } set { Strength = value; } }
 
         public int FuelTonnage { get { return FuelTonnage; } set { FuelTonnage = value; } }
+
+        public bool Military { get { return Military; } set { Military = value; } }
     }
 }

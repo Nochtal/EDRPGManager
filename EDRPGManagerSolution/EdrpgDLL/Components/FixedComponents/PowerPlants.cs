@@ -14,11 +14,12 @@ namespace EdrpgDLL.Concret
             Class = _class;
             Size = _size;
             Strength = _strength;
-            PowerGenerated = _powerGenerated;
+            PowerCost = _powerGenerated * -1;
             Cost = _cost;
-        }
+            Military = false;
+    }
 
-        public double PowerGenerated { get { return PowerGenerated; } set { PowerGenerated = value; } }
+        public double PowerCost { get { return PowerCost; } set { PowerCost = value; } }
 
         public char Class { get { return Class; } set { Class = value; } }
 
@@ -29,5 +30,7 @@ namespace EdrpgDLL.Concret
         public string Name { get { return Name; } set { Name = value; } }
 
         public int Strength { get { return Strength; } set { Strength = value; } }
+
+        public bool Military { get { return Military; } set { Military = value; } }
     }
 }

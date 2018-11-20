@@ -4,7 +4,7 @@ using EdrpgDLL.Ships.Abstract;
 
 namespace EdrpgDLL.Ships.Mounts
 {
-    class UtilityMount : iMounts
+    public class UtilityMount : iMounts
     {
         public UtilityMount(int size)
         {
@@ -19,18 +19,23 @@ namespace EdrpgDLL.Ships.Mounts
 
         public int Size { get { return Size; } set { Size = value; } }
 
-        public iUtilityComponent Weapon { get { return Weapon; } set { Weapon = value; } }
+        public iUtilityComponent Utility { get { return Utility; } set { Utility = value; } }
 
         public void EquipComponent(iComponent pw)
         {
             if (VerifyComponent(pw))
             {
-                Weapon = (iUtilityComponent)pw;
+                Utility = (iUtilityComponent)pw;
             }
             else
             {
                 /// Do nothing
             }
+        }
+
+        public void RemoveComponent()
+        {
+            Utility = null;
         }
 
         public bool VerifyComponent(iComponent pw)

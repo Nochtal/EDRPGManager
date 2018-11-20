@@ -5,12 +5,24 @@ namespace EdrpgDLL.Ships.Mounts
 {
     public class FixedMount : iMounts
     {
-        public FixedMount(int size)
+        public FixedMount(int size, string component)
         {
             Military = false;
             MountType = "Fixed";
+            Component = component;
             Size = size;
         }
+
+        public FixedMount(int size, string component, iFixedComponent c)
+        {
+            Military = false;
+            MountType = "Fixed";
+            Component = component;
+            Size = size;
+            Fixed = c;
+        }
+
+        public string Component { get { return Component; } set { Component = value; } }
 
         public bool Military { get { return Military; } set { Military = value; } }
 
@@ -34,7 +46,7 @@ namespace EdrpgDLL.Ships.Mounts
 
         public bool VerifyComponent(iComponent pw)
         {
-            if (pw is iFixedComponent && pw.Size <= Size) return true;
+            if (pw is iFixedComponent && pw.Size <= Size && pw.Name == Component) return true;
             else return false;
         }
     }

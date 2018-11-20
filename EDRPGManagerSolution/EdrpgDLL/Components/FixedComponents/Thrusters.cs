@@ -1,4 +1,5 @@
-﻿using EdrpgDLL.Abstract;
+﻿using System;
+using EdrpgDLL.Abstract;
 
 namespace EdrpgDLL.Concret
 {
@@ -10,7 +11,7 @@ namespace EdrpgDLL.Concret
     {
         public Thrusters(int _size, char _class, double _powerCost, int _strength, int _speedBonus, int _agilityBonus, int _cost)
         {
-            Name = "Thruster";
+            Name = "Thrusters";
             Size = _size;
             Class = _class;
             PowerCost = _powerCost;
@@ -32,6 +33,8 @@ namespace EdrpgDLL.Concret
         public int Size { get { return Size; } set { Size = value; } }
 
         public int Strength { get { return Strength; } set { Strength = value; } }
+
+        public bool Military { get { return Military; } set { Military = value; } }
 
         public int SpeedBonus()
         {

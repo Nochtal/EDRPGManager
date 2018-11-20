@@ -1,5 +1,4 @@
 ﻿using EdrpgDLL.Abstract;
-using EdrpgDLL.Components.Abstract;
 using EdrpgDLL.Ships.Abstract;
 
 namespace EdrpgDLL.Ships.Mounts
@@ -38,6 +37,11 @@ namespace EdrpgDLL.Ships.Mounts
             {
                 /// Do nothing
             }
+        }
+
+        public void RemoveComponent()
+        {
+            Optional = null;
         }
 
         public bool VerifyComponent(iComponent pw)

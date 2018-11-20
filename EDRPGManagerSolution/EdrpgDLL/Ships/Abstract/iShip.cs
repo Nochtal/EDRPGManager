@@ -62,6 +62,6 @@
         /// </summary>
         int Shields { get; set; }
 
-        
+        int ShipCost();
     }
 }

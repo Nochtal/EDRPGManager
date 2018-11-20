@@ -13,6 +13,7 @@ namespace EdrpgDLL.Concret
             Size = size;
             Strength = strength;
             Name = "Life Support";
+            Military = false;
         }
 
         public double Time { get { return Time; } set { Time = value; } }
@@ -28,5 +29,7 @@ namespace EdrpgDLL.Concret
         public int Size { get { return Size; } set { Size = value; } }
 
         public int Strength { get { return Strength; } set { Strength = value; } }
+
+        public bool Military { get { return Military; } set { Military = value; } }
     }
 }

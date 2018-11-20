@@ -12,6 +12,7 @@ namespace EdrpgDLL.Components.FixedComponents
             Strength = 10;
             Cost = 0;
             Name = "Cargo Hatch";
+            Military = false;
         }
 
         public char Class { get { return Class; } set { Class = value; } }
@@ -25,5 +26,7 @@ namespace EdrpgDLL.Components.FixedComponents
         public int Size { get { return Size; } set { Size = value; } }
 
         public int Strength { get { return Strength; } set { Strength = value; } }
+
+        public bool Military { get { return Military; } set { Military = value; } }
     }
 }
