@@ -2,7 +2,7 @@
 
 namespace EdrpgDLL.FixedComponents
 {
-    class PowerDistributor : iFixedComponent
+    public class PowerDistributor : iFixedComponent
     {
         public PowerDistributor(char _class, double powerCost, int cost, int size, int strength, int[] bonuses)
         {

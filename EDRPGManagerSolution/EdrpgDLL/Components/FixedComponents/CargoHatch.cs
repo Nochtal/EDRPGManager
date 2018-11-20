@@ -2,7 +2,7 @@
 
 namespace EdrpgDLL.Components.FixedComponents
 {
-    class CargoHatch : iFixedComponent
+    public class CargoHatch : iFixedComponent
     {
         public CargoHatch()
         {

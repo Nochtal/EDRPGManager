@@ -2,7 +2,7 @@
 
 namespace EdrpgDLL.Components.FixedComponents
 {
-    class FuelTank : iFixedComponent
+    public class FuelTank : iFixedComponent
     {
         public FuelTank(char _class, int size, int fuelTonnage, int cost)
         {

@@ -51,11 +51,17 @@
     <Compile Include="Components\FixedComponents\PowerPlants.cs" />
     <Compile Include="Components\FixedComponents\Sensors.cs" />
     <Compile Include="Components\FixedComponents\Thrusters.cs" />
+    <Compile Include="Components\OptionalComponents\AFMUnit.cs" />
+    <Compile Include="Components\OptionalComponents\CargoRack.cs" />
+    <Compile Include="Components\OptionalComponents\CollectorLimpetController.cs" />
+    <Compile Include="Components\OptionalComponents\DockingComputer.cs" />
+    <Compile Include="Components\OptionalComponents\FSDInterdictor.cs" />
+    <Compile Include="Components\OptionalComponents\FuelScoop.cs" />
+    <Compile Include="Components\OptionalComponents\HBLimpetController.cs" />
+    <Compile Include="Components\OptionalComponents\HRPackage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Components\OptionalComponents\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

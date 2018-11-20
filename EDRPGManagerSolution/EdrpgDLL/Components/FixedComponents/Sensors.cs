@@ -2,7 +2,7 @@
 
 namespace EdrpgDLL.Components.FixedComponents
 {
-    class Sensors : iFixedComponent
+    public class Sensors : iFixedComponent
     {
         public Sensors(int size, char _class, double powerCost, int cost, int strength, int[] effects)
         {
