@@ -2,28 +2,24 @@
 
 namespace EdrpgDLL.Components.OptionalComponents
 {
-    public class HBLimpetController : iOptionalComponent
+    public class ShieldCellBank : iOptionalComponent
     {
-        public HBLimpetController( int accuracy, string overRide, char _class, double powerCost, int size, int strength)
+        public ShieldCellBank(int recharge, int duration, char _class, int cost, double powerCost, int size, int strength)
         {
-            Accuracy = accuracy;
-            Override = overRide;
+            RechargeRate = recharge;
+            Duration = duration;
             Class = _class;
+            Cost = cost;
             Military = false;
-            Name = "Hatch Breaker Limpet Controller";
+            Name = "Shield Cell Bank";
             PowerCost = powerCost;
             Size = size;
             Strength = strength;
         }
 
-        public int Accuracy { get { return Accuracy; } set { Accuracy = value; } }
+        public int RechargeRate { get { return RechargeRate; } set { RechargeRate = value; } }
 
-        /// <summary>
-        /// Example: 7(1d10 units). First number is DC on 1d10 to succeed in hack.
-        /// If successful, roll number of d10 indicated for how many units of cargo
-        /// canisters tumble out of the cargo bay.
-        /// </summary>
-        public string Override { get { return Override; } set { Override = value; } }
+        public int Duration { get { return Duration; } set { Duration = value; } }
 
         public char Class { get { return Class; } set { Class = value; } }
 

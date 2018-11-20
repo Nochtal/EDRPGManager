@@ -2,24 +2,27 @@
 
 namespace EdrpgDLL.Components.OptionalComponents
 {
-    public class HRPackage : iOptionalComponent
+    public class MRPackage : iOptionalComponent
     {
-        public HRPackage(int extraHP, char _class, int cost, int size, int strength)
+        public MRPackage(string moduleGP, int extraSP, char _class, int cost, int size)
         {
-            ExtraHullPoints = extraHP;
+            ModuleGroupsProtected = moduleGP;
+            ExtraStrengthPoints = extraSP;
             Class = _class;
             Cost = cost;
             Military = true;
-            Name = "Hull Reinforcement Package";
+            Name = "Module Reinforcement Package";
             PowerCost = 0;
             Size = size;
-            Strength = strength;
+            Strength = 0;
         }
 
-        public int ExtraHullPoints { get { return ExtraHullPoints; } set { ExtraHullPoints = value; } }
+        public string ModuleGroupsProtected { get { return ModuleGroupsProtected; } set { ModuleGroupsProtected = value; } }
+
+        public int ExtraStrengthPoints { get { return ExtraStrengthPoints; } set { ExtraStrengthPoints = value; } }
 
         public char Class { get { return Class; } set { Class = value; } }
-        
+
         public int Cost { get { return Cost; } set { Cost = value; } }
 
         public bool Military { get { return Military; } set { Military = value; } }

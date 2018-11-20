@@ -59,6 +59,13 @@
     <Compile Include="Components\OptionalComponents\FuelScoop.cs" />
     <Compile Include="Components\OptionalComponents\HBLimpetController.cs" />
     <Compile Include="Components\OptionalComponents\HRPackage.cs" />
+    <Compile Include="Components\OptionalComponents\MRPackage.cs" />
+    <Compile Include="Components\OptionalComponents\PlanetaryScanner.cs" />
+    <Compile Include="Components\OptionalComponents\PRLimpetController.cs" />
+    <Compile Include="Components\OptionalComponents\Refinery.cs" />
+    <Compile Include="Components\OptionalComponents\ShieldCellBank.cs" />
+    <Compile Include="Components\OptionalComponents\ShieldGenerator.cs" />
+    <Compile Include="Components\OptionalComponents\VehicleHangar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

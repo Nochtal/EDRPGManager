@@ -2,28 +2,21 @@
 
 namespace EdrpgDLL.Components.OptionalComponents
 {
-    public class HBLimpetController : iOptionalComponent
+    public class PlanetaryScanner : iOptionalComponent
     {
-        public HBLimpetController( int accuracy, string overRide, char _class, double powerCost, int size, int strength)
+        public PlanetaryScanner(string notes, char _class, int cost, string name, double powerCost, int strength)
         {
-            Accuracy = accuracy;
-            Override = overRide;
+            Notes = notes;
             Class = _class;
+            Cost = cost;
             Military = false;
-            Name = "Hatch Breaker Limpet Controller";
+            Name = name;
             PowerCost = powerCost;
-            Size = size;
+            Size = 1;
             Strength = strength;
         }
 
-        public int Accuracy { get { return Accuracy; } set { Accuracy = value; } }
-
-        /// <summary>
-        /// Example: 7(1d10 units). First number is DC on 1d10 to succeed in hack.
-        /// If successful, roll number of d10 indicated for how many units of cargo
-        /// canisters tumble out of the cargo bay.
-        /// </summary>
-        public string Override { get { return Override; } set { Override = value; } }
+        public string Notes { get { return Notes; } set { Notes = value; } }
 
         public char Class { get { return Class; } set { Class = value; } }
 
