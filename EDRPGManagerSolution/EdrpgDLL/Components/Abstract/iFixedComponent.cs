@@ -1,6 +1,6 @@
 ﻿namespace EdrpgDLL.Abstract
 {
-    interface iFixedComponent : iComponent
+    public interface iFixedComponent : iComponent
     {
 
     }

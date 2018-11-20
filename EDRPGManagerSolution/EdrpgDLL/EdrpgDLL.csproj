@@ -43,6 +43,8 @@
     <Compile Include="Components\Abstract\iComponent.cs" />
     <Compile Include="Components\Abstract\iFixedComponent.cs" />
     <Compile Include="Components\Abstract\iOptionalComponent.cs" />
+    <Compile Include="Components\Abstract\iUtilityComponent.cs" />
+    <Compile Include="Components\Abstract\iWeaponComponent.cs" />
     <Compile Include="Components\FixedComponents\CargoHatch.cs" />
     <Compile Include="Components\FixedComponents\FrameShiftDrive.cs" />
     <Compile Include="Components\FixedComponents\FuelTank.cs" />
@@ -67,6 +69,12 @@
     <Compile Include="Components\OptionalComponents\ShieldGenerator.cs" />
     <Compile Include="Components\OptionalComponents\VehicleHangar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ships\Abstract\iMounts.cs" />
+    <Compile Include="Ships\Abstract\iShip.cs" />
+    <Compile Include="Ships\Mounts\FixedMount.cs" />
+    <Compile Include="Ships\Mounts\OptionalMount.cs" />
+    <Compile Include="Ships\Mounts\UtilityMount.cs" />
+    <Compile Include="Ships\Mounts\WeaponMount.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
