@@ -79,6 +79,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ships\Abstract\iMounts.cs" />
     <Compile Include="Ships\Abstract\iShip.cs" />
+    <Compile Include="Ships\BaseObjects\Ship.cs" />
     <Compile Include="Ships\Mounts\FixedMount.cs" />
     <Compile Include="Ships\Mounts\OptionalMount.cs" />
     <Compile Include="Ships\Mounts\UtilityMount.cs" />
