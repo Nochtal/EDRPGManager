@@ -69,6 +69,13 @@
     <Compile Include="Components\OptionalComponents\ShieldCellBank.cs" />
     <Compile Include="Components\OptionalComponents\ShieldGenerator.cs" />
     <Compile Include="Components\OptionalComponents\VehicleHangar.cs" />
+    <Compile Include="Components\UtilityComponents\ChaffLauncer.cs" />
+    <Compile Include="Components\UtilityComponents\ECM.cs" />
+    <Compile Include="Components\UtilityComponents\HeatSinkLauncher.cs" />
+    <Compile Include="Components\UtilityComponents\KillWarrantScanner.cs" />
+    <Compile Include="Components\UtilityComponents\ManifestScanner.cs" />
+    <Compile Include="Components\UtilityComponents\PointDefence.cs" />
+    <Compile Include="Components\UtilityComponents\ShieldBooster.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ships\Abstract\iMounts.cs" />
     <Compile Include="Ships\Abstract\iShip.cs" />
