@@ -29,5 +29,14 @@ namespace EdrpgDLL.Components.FixedComponents
         public int FuelTonnage { get { return FuelTonnage; } set { FuelTonnage = value; } }
 
         public bool Military { get { return Military; } set { Military = value; } }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns>Fuel Tonnage as double</returns>
+        public double getValue()
+        {
+            return FuelTonnage;
+        }
     }
 }

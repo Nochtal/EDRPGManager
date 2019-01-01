@@ -46,5 +46,10 @@ namespace EdrpgDLL.Components.FixedComponents
         
         public void GenScanBonus(int bonus) { Effects[2] = bonus; }
         public int GenScanBonus() { return Effects[2]; }
+
+        public double getValue()
+        {
+            return -1;
+        }
     }
 }

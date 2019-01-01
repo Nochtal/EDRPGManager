@@ -1,4 +1,6 @@
-﻿namespace EdrpgDLL.Ships.Abstract
+﻿using System;
+
+namespace EdrpgDLL.Ships.Abstract
 {
     public interface iShip
     {

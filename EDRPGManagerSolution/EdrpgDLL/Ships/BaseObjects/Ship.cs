@@ -1,7 +1,10 @@
-﻿using EdrpgDLL.Components.FixedComponents;
+﻿using System;
+using EdrpgDLL.Components.FixedComponents;
 using EdrpgDLL.Components.OptionalComponents;
 using EdrpgDLL.Ships.Abstract;
 using EdrpgDLL.Ships.Mounts;
+using System.Linq;
+using EdrpgDLL.Components.UtilityComponents;
 
 namespace EdrpgDLL.Ships.BaseObjects
 {
@@ -103,16 +106,40 @@ namespace EdrpgDLL.Ships.BaseObjects
             {
                 if (om.Optional.GetType() == typeof(HRPackage))
                 {
-                    /// Look for cleaner way to do this.
-                    HRPackage temp = (HRPackage)om.Optional;
-                    Hull += temp.ExtraHullPoints;
+                    Hull += (int)om.Optional.getValue();
                 }
             }
         }
 
         public void ApplyShieldModifiers()
         {
+            bool shielded = false;
+            foreach (OptionalMount om in Optionals)
+            {
+                if (om.Optional.GetType() == typeof(ShieldGenerator))
+                {
+                    Shields = (int)om.Optional.getValue();
+                    shielded = true;
+                    break;
+                }
+            }
+            if (shielded)
+            {
+                int tShields = 0;
 
+                foreach (UtilityMount um in Utilities)
+                {
+                    if (um.Utility.GetType() == typeof(ShieldBooster))
+                    {
+                        tShields = (int)(Shields * um.Utility.getValue());
+                    }
+                }
+                Shields += tShields;
+            }
+            else
+            {
+                Shields = 0;
+            }
         }
     }
 }

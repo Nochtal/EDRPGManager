@@ -9,5 +9,6 @@
         int Strength { get; set; }
         bool Military { get; set; }
         double PowerCost { get; set; }
+        double getValue();
     }
 }

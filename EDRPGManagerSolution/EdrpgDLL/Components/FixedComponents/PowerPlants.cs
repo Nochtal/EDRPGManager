@@ -32,5 +32,14 @@ namespace EdrpgDLL.Concret
         public int Strength { get { return Strength; } set { Strength = value; } }
 
         public bool Military { get { return Military; } set { Military = value; } }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns>PowerCost as positive double</returns>
+        public double getValue()
+        {
+            return PowerCost * -1;
+        }
     }
 }

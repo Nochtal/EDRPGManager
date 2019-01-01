@@ -45,5 +45,10 @@ namespace EdrpgDLL.Concret
         {
             return Effects[1];
         }
+
+        public double getValue()
+        {
+            return -1;
+        }
     }
 }

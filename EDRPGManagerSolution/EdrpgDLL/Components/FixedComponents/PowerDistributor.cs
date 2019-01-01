@@ -51,5 +51,10 @@ namespace EdrpgDLL.FixedComponents
 
         public void ShieldsBonus(int bonus) { Effects[3] = bonus; }
         public int ShieldsBonus() { return Effects[3]; }
+
+        public double getValue()
+        {
+            return -1;
+        }
     }
 }

@@ -36,5 +36,10 @@ namespace EdrpgDLL.Components.UtilityComponents
         public int Size { get { return Size; } set { Size = value; } }
 
         public int Strength { get { return Strength; } set { Strength = value; } }
+
+        public double getValue()
+        {
+            return 4;
+        }
     }
 }

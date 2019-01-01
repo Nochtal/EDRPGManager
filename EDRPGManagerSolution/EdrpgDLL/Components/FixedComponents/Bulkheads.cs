@@ -18,5 +18,10 @@ namespace EdrpgDLL.Components.FixedComponents
         public string Ship { get { return Ship; } set { Ship = value; } }
         public int ReinforcedAlloy { get { return ReinforcedAlloy; } set { ReinforcedAlloy = value; } }
         public int MilitaryGradeComposite { get { return MilitaryGradeComposite; } set { MilitaryGradeComposite = value; } }
+
+        public double getValue()
+        {
+            return -1;
+        }
     }
 }

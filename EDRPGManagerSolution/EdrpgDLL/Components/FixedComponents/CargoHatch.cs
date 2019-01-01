@@ -28,5 +28,10 @@ namespace EdrpgDLL.Components.FixedComponents
         public int Strength { get { return Strength; } set { Strength = value; } }
 
         public bool Military { get { return Military; } set { Military = value; } }
+
+        public double getValue()
+        {
+            return Strength;
+        }
     }
 }

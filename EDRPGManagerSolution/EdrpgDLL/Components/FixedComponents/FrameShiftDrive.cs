@@ -1,7 +1,11 @@
-﻿using EdrpgDLL.Abstract;
+﻿using System;
+using EdrpgDLL.Abstract;
 
 namespace EdrpgDLL.Concret
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class FrameShiftDrive : iFixedComponent
     {
         public FrameShiftDrive(char _class, int _size, int _strength, double _powerCost, int _range, int cost)
@@ -30,5 +34,14 @@ namespace EdrpgDLL.Concret
         public int Strength { get { return Strength; } set { Strength = value; } }
 
         public bool Military { get { return Military; } set { Military = value; } }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns>Range as double</returns>
+        public double getValue()
+        {
+            return Range;
+        }
     }
 }
